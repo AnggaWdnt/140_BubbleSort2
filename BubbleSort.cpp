@@ -57,3 +57,11 @@ void bubbleSort() {    // prosedur untuk mengurutkan array
         cout << endl;
     }
 }
+
+int main()
+{
+    input();
+    bubbleSort();
+    display();
+    return 0;
+}
