@@ -58,10 +58,10 @@ void bubbleSort() {    // prosedur untuk mengurutkan array
     }
 }
 
-int main()
+int main()      // Fungsi utama program
 {
-    input();
-    bubbleSort();
-    display();
-    return 0;
+    input();       // Memanggil fungsi input untuk memasukkan data
+    bubbleSort();   // Memanggil fungsi bubble sort untuk mengurutkan data
+    display();      // Menampilkan hasil array setelah diurutkan
+    return 0;       // Mengakhiri program
 }
