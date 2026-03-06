@@ -27,34 +27,34 @@ void input() { // procedur unutk input
     }
 }
 
-    void display() {
-	cout << endl;
-	cout << "============================" << endl;
-	cout << "Elemen Array yang belum disusun" << endl;
-	cout << "============================" << endl;
-	for (int j = 0; j < n; j++) {
-		cout << a[j] << endl;
+    void display() {        // Prosedur untuk menampilkan isi array
+	cout << endl;           // Baris kosong
+	cout << "============================" << endl;     // Garis pemisah
+	cout << "Elemen Array yang belum disusun" << endl;      // Judul tampilan array
+	cout << "============================" << endl;     // Garis pemisah
+	for (int j = 0; j < n; j++) {       // Perulangan untuk menampilkan semua elemen array
+		cout << a[j] << endl;           // Menampilkan nilai array pada indeks j
 	}
-	cout << endl;
+	cout << endl;       // Baris kosong
 }
 
 void bubbleSort() {    // prosedur untuk mengurutkan array
-        cout << "\n===================" << endl;
-        cout << "Hasil Setiap Pass" << endl;
-        cout << "\n===================" << endl;
+        cout << "\n===================" << endl;        // Garis pemisah
+        cout << "Hasil Setiap Pass" << endl;            // Judul proses sorting
+        cout << "\n===================" << endl;        // Garis pemisah
     for (int pass = 1; pass < n; pass++) {        // looping
-        for (int j = 0; j <= n - 1 - pass; j++) {
-            if (a[j] > a[j + 1]) {
-                int temp = a[j];
-                a[j] = a[j + 1];
-                a[j + 1] = temp;
+        for (int j = 0; j <= n - 1 - pass; j++) {   // Membandingkan elemen yang bersebelahan
+            if (a[j] > a[j + 1]) {      // Jika elemen kiri lebih besar dari kanan
+                int temp = a[j];        // Simpan nilai a[j] ke variabel sementara
+                a[j] = a[j + 1];        // Tukar nilai a[j] dengan a[j+1]
+                a[j + 1] = temp;        // Simpan nilai lama ke posisi berikutnya
             }
         }
-        cout << "Pass ke-" << pass << ":\t";
-        for (int k = 0; k < n; k++) {
-            cout << a[k] << " ";
+        cout << "Pass ke-" << pass << ":\t";        // Menampilkan pass ke berapa
+        for (int k = 0; k < n; k++) {       // Perulangan untuk menampilkan isi array
+            cout << a[k] << " ";            // Menampilkan elemen array setelah pass
         }
-        cout << endl;
+        cout << endl;       // Pindah baris setelah menampilkan satu pass
     }
 }
 
